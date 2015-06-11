@@ -1,28 +1,11 @@
-== README
+# The Iron Yard - Day 27
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Assignment
+-------
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+1. Create a rails app that will store photos
+1. Have ability to upload photos when you go to `/admin`
+2. Show the photos on your `root_path`, but only 6 to a page (pagination)
+3. Make sure when you upload your photos that you are resizing the photos to
+   500px x 500px (use carrierwave)
+4. Make sure that `/admin` is secured using `before_action` and `has_secure_password`
