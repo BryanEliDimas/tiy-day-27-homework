@@ -1,0 +1,11 @@
+<br>
+<div class="row">
+  <% @posts.each do |post| %>
+    <div class="col-md-4">
+      <%= image_tag post.photo.url(:large), class: "img-responsive img-thumbnail" %>
+      <span style="color: white"><%= post.title %></span>
+    </div>
+  <% end %>
+</div>
+
+<%= paginate @posts %>
