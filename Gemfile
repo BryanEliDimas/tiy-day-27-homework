@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'simple_form', '3.1'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass'  # For 
 gem 'kaminari'  # pagination
 gem 'carrierwave-aws'
 # gem 'rails_autolink'
@@ -51,4 +51,6 @@ group :development, :test do
   gem 'spring'
 
   gem 'rename'
+
+  gem 'pry'
 end

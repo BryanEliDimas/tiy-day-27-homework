@@ -1,6 +1,11 @@
 class PostsController < ApplicationController
-  before_action do
-    # @signed_in_user = 
+  before_action :check_auth, only: [:new, :create]
+
+  def check_auth
+    @signed_in_user = User.find_by id: session[:current_user_id]
+    if @signed_in_user.nil?
+      redirect_to sign_in_path
+    end
   end
 
   def index
