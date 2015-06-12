@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+  before_action do
+    # @signed_in_user = 
+  end
+
   def index
     @posts = Post.all.order("created_at desc").page(params[:page]).per(6)
   end
