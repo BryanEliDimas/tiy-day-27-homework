@@ -14,6 +14,7 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @check_auth
   end
 
   def create

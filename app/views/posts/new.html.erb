@@ -1,3 +1,6 @@
+<!-- New Post page -->
+<button class="btn btn-warning"> <%= link_to "Log out", sign_out_path, method: :delete %> </button>
+
 <%= simple_form_for @post do |f| %>
   <%= f.input :title, as: :text %>
   <%= f.input :photo %>

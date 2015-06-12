@@ -13,8 +13,9 @@ class SessionController < ApplicationController
     if (user) && (user.authenticate password) # If user exists and password is right
       # Store the user's id in a session variable
       session[:current_user_id] = user.id
-      redirect_to root_path
+      redirect_to root_path, notice: "You're in! 😀"
     else
+      flash.now[:notice] = "Ooops. Try again."
       render :new
     end
 

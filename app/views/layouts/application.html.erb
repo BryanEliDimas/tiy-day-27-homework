@@ -15,6 +15,12 @@
     <%= link_to "Admin", new_post_path, class: "btn btn-primary" %>
   </div>
 
+  <% if notice %>
+    <div class="notice">
+      <%= notice %>
+    </div>
+  <% end %>
+
   <%= yield %>
 </div>
 
