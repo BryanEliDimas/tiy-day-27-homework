@@ -1,12 +1,17 @@
 source 'https://rubygems.org'
 
 gem 'simple_form', '3.1'
-gem 'bootstrap-sass'  # For
+gem 'bootstrap-sass'  # So we can style simple_form
+
 gem 'kaminari'  # pagination
-gem 'carrierwave-aws'
-# gem 'rails_autolink'
 gem 'mini_magick' # upload pictures
+
 # gem 'rails_admin'
+# gem 'rails_autolink'
+
+gem 'carrierwave-aws'
+gem 'dotenv-rails'  # Required by carrierwave-aws
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
