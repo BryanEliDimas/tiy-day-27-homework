@@ -12,6 +12,7 @@ gem 'mini_magick' # upload pictures
 gem 'carrierwave-aws'
 gem 'dotenv-rails'  # Required by carrierwave-aws
 
+gem 'acts_as_taggable_on'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

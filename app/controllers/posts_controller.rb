@@ -18,7 +18,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new params.require(:post).permit(:title, :photo)
+    @post = Post.new params.require(:post).permit(:title, :photo, :tag_list)
 
     if @post.save
       redirect_to root_path, notice: "It saved!"
