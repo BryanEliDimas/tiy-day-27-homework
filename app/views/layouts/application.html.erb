@@ -8,12 +8,30 @@
 </head>
 <body>
 
-<div class="container">
-  <!-- In place of navbar -->
-  <div class="btn-group btn-group-justified">
-    <%= link_to "Home", root_path, class: "btn btn-primary" %>
-    <%= link_to "Admin", new_post_path, class: "btn btn-primary" %>
+
+<nav class="nav navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Foto</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Admin", new_post_path %></li>
+      </ul>
+
   </div>
+</nav>
+
+<div class="container">
 
   <% if notice %>
     <div class="notice">
