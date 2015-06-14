@@ -5,6 +5,8 @@
       <div class="col-xs-12 col-md-4">
         <%= image_tag post.photo.url(:large), class: "img-responsive img-thumbnail" %>
         <span style="color: white"><%= post.title %></span>
+        <br>
+        <span style="color: skyblue;"><%= post.tag_list.join(", ") %></span>
       </div>
     <% end %>
   </div>
