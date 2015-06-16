@@ -14,7 +14,6 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
-    # @check_auth
   end
 
   def create
@@ -26,4 +25,10 @@ class PostsController < ApplicationController
       render :new
     end
   end
+
+  # private
+  #
+  #   def post_params
+  #     params.require(:post).permit(:title, :photo, :tag_list)
+  #   end
 end
